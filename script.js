@@ -71,6 +71,8 @@ const returnSquare = (num) => {
     num = prompt("Введите число");
     if (isNaN(num)) {
         console.log("Переданный параметр не является числом");
+    } else if (num > 10) {
+        console.log("необходимо ввести число меньше 10");
     } else {
         let result = Math.pow(num, 3);
         return console.log(`n в кубе равняется ${result}`);
